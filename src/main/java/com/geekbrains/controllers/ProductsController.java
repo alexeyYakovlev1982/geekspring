@@ -33,6 +33,7 @@ public class ProductsController {
     @RequestMapping("/processForm")
     public String processForm(@ModelAttribute("product") Product product) {
         System.out.println(product.getId() + " " + product.getTitle() + " " + product.getCost());
+        productsService.saveProduct(product);
         return "product-form-result";
     }
 
