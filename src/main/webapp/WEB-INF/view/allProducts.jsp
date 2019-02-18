@@ -9,6 +9,5 @@
                 <span>${product.id} ${product.title} ${product.cost} </span>
             </c:forEach>
         <br>
-  
     </body>
 </html>
